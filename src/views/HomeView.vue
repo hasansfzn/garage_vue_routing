@@ -1,5 +1,10 @@
 <script setup>
   import TopContainer from "@/components/Home/TopContainer.vue";
+  import { useCarStore } from "@/stores/useCarStore.js";
+
+  let cars = useCarStore();
+
+  cars.fill();
 </script>
 
 <template>
