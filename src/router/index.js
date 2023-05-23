@@ -2,6 +2,7 @@ import AboutView from "@/views/AboutView.vue";
 import HomeView from "@/views/HomeView.vue";
 import ProductsView from "@/views/ProductsView.vue";
 import NotFound from "@/views/NotFound.vue";
+import ProductDetails from "@/views/ProductDetails.vue";
 import { createRouter, createWebHistory } from "vue-router";
 
 const router = createRouter({
@@ -22,7 +23,16 @@ const router = createRouter({
       name: "products",
       component: ProductsView,
     },
-    { path: "/:pathMatch(.*)*", name: "NotFound", component: NotFound },
+    {
+      path: "/product/:id",
+      name: "Product",
+      component: ProductDetails,
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      name: "NotFound",
+      component: NotFound,
+    },
   ],
 });
 
