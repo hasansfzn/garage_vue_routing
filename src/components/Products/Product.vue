@@ -1,4 +1,6 @@
 <script setup>
+  import { useRouter } from "vue-router";
+  const router = useRouter();
   defineProps({
     car: Object,
   });
@@ -6,26 +8,26 @@
 
 <template>
   <div>
-    <a href="#">
+    <div>
       <img
         class="rounded-t-lg"
         :src="car.img"
         alt=""
       />
-    </a>
+    </div>
     <div class="p-5">
-      <a href="#">
+      <div>
         <h5
           class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
           {{ car.name }}
         </h5>
-      </a>
+      </div>
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
         {{ car.body }}
       </p>
-      <a
-        href="#"
+      <button
+        @click="router.push(`/product/${car.id}`)"
         class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-green-700 rounded-lg hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
       >
         Read more
@@ -42,7 +44,7 @@
             clip-rule="evenodd"
           ></path>
         </svg>
-      </a>
+      </button>
     </div>
   </div>
 </template>

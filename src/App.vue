@@ -1,5 +1,13 @@
 <script setup>
+  import { computed } from "vue";
   import { RouterLink, RouterView } from "vue-router";
+  import { useRoute } from "vue-router";
+
+  const route = useRoute();
+
+  let pathMatch = computed(() => {
+    return route.path.startsWith("/product");
+  });
 </script>
 
 <template>
@@ -27,6 +35,7 @@
           to="/products"
           active-class="active"
           class="router_nav mb-2"
+          :class="{ active: pathMatch }"
           >Products</RouterLink
         >
       </div>

@@ -1,14 +1,21 @@
 <script setup>
-  import { useCarStore } from "@/stores/useCarStore";
+  // import { useCarStore } from "@/stores/useCarStore";
   import Product from "./Product.vue";
-  let cars = useCarStore();
+  // let cars = useCarStore();
+
+  const props = defineProps({
+    cars: Array,
+  });
 </script>
 
 <template>
-  <div class="grid grid-cols-4 gap-3">
+  <div
+    class="grid gap-3"
+    :class="[cars.length <= 6 ? 'grid-cols-3' : 'grid-cols-4']"
+  >
     <Product
       class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-      v-for="car in cars?.cars"
+      v-for="car in props?.cars"
       :key="car.id"
       :car="car"
     />
