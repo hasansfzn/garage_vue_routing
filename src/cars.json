@@ -1,0 +1,86 @@
+{
+  "carCount": 10,
+  "cars": [
+    {
+      "id": 1,
+      "name": "Axias Chevrolet",
+      "make": "Chevrolet",
+      "body": "coupe",
+      "price": 45323,
+      "year": 2020,
+      "img": "../src/assets/blueCar.jpeg"
+    },
+    {
+      "id": 2,
+      "make": "Buick",
+      "name": "Buick Sedan",
+      "body": "sedan",
+      "price": 25422,
+      "year": 2016,
+      "img": "../src/assets/vintageCar.jpeg"
+    },
+    {
+      "id": 3,
+      "make": "Porsche",
+      "name": "Porsche SUV",
+      "body": "SUV",
+      "price": 77693,
+      "year": 2018,
+      "img": "../src/assets/redCar.jpeg"
+    },
+    {
+      "id": 5,
+      "make": "Audi",
+      "name": "Audi SUV",
+      "body": "SUV",
+      "price": 12242,
+      "year": 2011,
+      "img": "../src/assets/redCar.jpeg"
+    },
+    {
+      "id": 6,
+      "make": "Chevrolet",
+      "name": "Chevrolet Coupe",
+      "body": "coupe",
+      "price": 145323,
+      "year": 2023,
+      "img": "../src/assets/blueCar.jpeg"
+    },
+    {
+      "id": 7,
+      "make": "Chevrolet",
+      "name": "Chevrolet SUV Truck",
+      "body": "SUV",
+      "price": 434,
+      "year": 2003,
+      "img": "../src/assets/vintageCar.jpeg"
+    },
+    {
+      "id": 8,
+      "make": "Porsche",
+      "name": "Porsche Coupe OT",
+      "body": "Coupe",
+      "price": 277693,
+      "year": 2023,
+      "img": "../src/assets/blueCar.jpeg"
+    },
+    {
+      "id": 9,
+      "make": "Audi",
+      "name": "Audi Sedan OTS",
+      "body": "sedan",
+      "price": 82242,
+      "year": 2019,
+      "img": "../src/assets/redCar.jpeg"
+    },
+    {
+      "id": 10,
+      "make": "Chevrolet",
+      "name": "Chevrolet Coupe LRS",
+      "body": "coupe",
+      "price": 45323,
+      "year": 2020,
+      "img": "../src/assets/blueCar.jpeg"
+    }
+  ]
+}
