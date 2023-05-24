@@ -16,7 +16,7 @@
     </h2>
 
     <div>
-      <ProductList />
+      <ProductList :cars="cars.cars" />
     </div>
   </div>
 </template>
