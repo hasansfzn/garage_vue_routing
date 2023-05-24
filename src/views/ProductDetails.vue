@@ -51,7 +51,7 @@
           class="basis-1/2 w-full max-h-80 h-full border border-gray-100 shadow-md shadow-green-100"
         />
 
-        <div class="text-justify space-y-2 basis-1/2 text-gray-400">
+        <div class="text-justify space-y-2 lg:basis-1/2 text-gray-400">
           <h2 class="text-3xl font-bold mb-4 text-white">{{ car?.name }}</h2>
           <h3 class="text-xl font-bold mb-3">
             <span>Car Body: {{ car?.body }} </span>

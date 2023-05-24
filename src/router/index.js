@@ -24,18 +24,18 @@ const router = createRouter({
       component: ProductsView,
     },
     {
-      path: "/product-:id-:name",
-      name: "Product",
+      path: "/product-:id",
+      name: "product",
       component: ProductDetails,
     },
-    {
-      path: "/product-:id(.*)",
-      name: "Product",
-      component: ProductsView,
-    },
+    // {
+    //   path: "/product-:id(.*)",
+    //   name: "products",
+    //   component: ProductsView,
+    // },
     {
       path: "/:pathMatch(.*)*",
-      name: "NotFound",
+      name: "notFound",
       component: NotFound,
     },
   ],

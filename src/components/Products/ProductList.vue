@@ -10,8 +10,8 @@
 
 <template>
   <div
-    class="grid gap-3"
-    :class="[cars.length <= 6 ? 'grid-cols-3' : 'grid-cols-4']"
+    class="grid gap-3 grid-cols md:grid-cols-2"
+    :class="[cars.length <= 6 ? 'lg:grid-cols-3' : 'lg:grid-cols-4']"
   >
     <Product
       class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"

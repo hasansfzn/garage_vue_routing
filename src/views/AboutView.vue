@@ -2,11 +2,11 @@
 
 <template>
   <div>
-    <h2 class="text-6xl my-4 font-semibold text-green-500 w-2/3">
+    <h2 class="text-6xl my-4 font-semibold text-green-500 md:w-2/3">
       Car in our store is much more affortable, reliable, trustable
     </h2>
     <div class="flex place-content-start">
-      <div class="space-y-4 w-3/4">
+      <div class="space-y-4 w-11/12 md:w-10/12 lg:w-3/4">
         <h2 class="text-5xl">We are the one to serve you well.</h2>
         <p class="text-lg text-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero illo
